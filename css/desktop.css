@@ -1,0 +1,62 @@
+/* HEADER */
+/* NAVBAR */
+.header-content .header-content-nav .checkbtn {
+    display: none;
+}
+
+.header-content .header-content-nav-logo img {
+    margin-top: 18px;
+    width: 50px;
+}
+
+.header-content .header-content-nav-ul {
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    left: 50%;
+    text-align: start;
+    top: 0%;
+    width: auto;
+}
+
+.header-content .header-content-nav-ul li {
+    display: block;
+    line-height: 3em;
+    margin: 10px 0;
+}
+
+.header-content .header-content-nav-ul li {
+    display: inline-block;
+    line-height: 68px;
+    margin: 0 5px;
+}
+
+.header-content .header-content-nav-ul li a {
+    margin: 10px 15px;
+    padding: 15px 7px;
+}
+
+.header-content .header-content-nav-ul li a:hover {
+    color: var(--color-span);
+    transition: .5s;
+}
+/* NAVBAR:COMPLETE */
+
+/* TITLE */
+.header-content .header-content-title {
+}
+
+.header-content .header-content-title-h1 {
+    font-size: 6.5rem;
+    letter-spacing: 2px;
+}
+
+.header-content .header-content-title-p {
+
+}
+
+/* TITLE:COMPLETE */
+
+
+/* HEADER:COMPLETE */
