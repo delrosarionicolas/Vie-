@@ -27,30 +27,46 @@ html {
     font-size: 62.5%;
 }
 
-.section-padding {
-    padding: 120px 0;
-}
-
 .color-font {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.title {
+.section-padding {
+    padding: 120px 0;
+}
 
+.center-content {
+    height: auto;
+    margin: 0 auto 60px auto;
+    min-width: 350px;
+    max-width: 700px;
+    padding: 0 10px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .subtitle {
-
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
 }
 
 .paragraph {
-
+    color: var(--color-p);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2;
 }
 
 /* HEADER */
-
 #header {
     height: 740px;
     width: 100%;
@@ -58,7 +74,8 @@ html {
 
 #header .header-img {
     background-attachment: fixed;
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/slid/03.jpg);
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/slid/03.jpg); */
+    background-image: url(../img/header-img.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +131,6 @@ html {
     max-width: 1200px;
     width: 100%;
 }
-
 
 .header-content .header-content-nav #check {
     display: none;
@@ -208,7 +224,7 @@ html {
 
 .header-content .header-content-title-btn:hover {
     transition: 1.5s;
-    background: white;
+    background: var(--white);
 }
 
 .header-content .header-content-title-btn span {
@@ -224,14 +240,233 @@ html {
 }
 
 /* TITLE */
-
 /* HEADER:COMPLETE */
 
+/* MAIN */
 
+.main-content {
+    width: 100%;
+    height: auto;
+    background: var(--first-color);
+}
 
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-main {
-    background: gray;
-    height: 500px;
+/* Second SECTION */
+
+.second-container {
+    text-align: center;
+    height: auto;
     width: 100%;
 }
+
+.main-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-services .main-services-content {
+    height: auto;
+    min-width: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 80px 30px;
+}
+
+.main-services .main-services-content .icon {
+    align-self: center;
+    color: var(--white);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(21, 25, 32, 1) 0%, rgba(28, 21, 27, 1) 38%, rgba(27, 22, 31, 0.9710084717480743) 100%);
+    /* background: linear-gradient(to right, rgba(21, 25, 32, 1) 0%, rgba(0, 0, 0, 1) 38%, rgba(27, 22, 31, 0.9710084717480743) 100%); */
+}
+
+.main-services .main-services-content .main-services-content-h3 {
+    line-height: 1.8;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+/* SECOND SECTION:COMPLETE */
+
+/* THIRD SECTION */
+.third-container {
+    text-align: center;
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.third-container-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+
+    grid-template-areas:
+        'item1 item2 item2'
+        'item3 item2 item2'
+        'item4 item4 item5';
+
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.grid-item-overlay {
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    background: var(--gradient);
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.grid-item-overlay:hover {
+    overflow: hidden;
+    opacity: .7;
+}
+
+.grid-item1 {
+    background-image: url(../img/item1.webp);
+    grid-area: item1;
+}
+
+.grid-item2 {
+    background-image: url(../img/item2.webp);
+    grid-area: item2;
+}
+
+.grid-item3 {
+    background-image: url(../img/item3.webp);
+    grid-area: item3;
+}
+
+.grid-item4 {
+    background-image: url(../img/item4.webp);
+    grid-area: item4;
+    background-position: bottom;
+}
+
+.grid-item5 {
+    background-image: url(../img/item5.webp);
+    grid-area: item5;
+}
+
+/* THIRD SECTION:COMPLETE */
+
+
+
+/* Fourth SECTION */
+.fourth-container {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.main-services .main-services-content-fourth {
+    border: none;
+}
+
+.main-services .main-services-content .icon-fourth-section {
+    font-size: 60px;
+    border-radius: 0%;
+    background: none;
+    margin-bottom: 40px;
+}
+
+.main-services .main-services-content .h3-fourth {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 1.4;
+}
+
+/* FOURTH SECTION:COMPLETE */
+
+
+
+/* SEVENTH SECTION */
+.seventh-container {
+    text-align: center;
+    height: 900px;
+    width: 100%;
+}
+
+.seventh-container-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-flex {
+    max-width: 50%;
+    text-align: start;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 370px;
+}
+
+.container-flex-img {
+    max-width: 690px;
+    height: auto;
+    min-width: 320px;
+}
+
+.container-flex-img img {
+    width: 100%;
+    height: auto;
+}
+
+.container-flex-img figcaption {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    color: #aaa;
+    padding: 24px 0 5px 0;
+}
+
+.container-flex-p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0 0 24px 0;
+}
+
+.container-flex-a {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    color: var(--color-p);
+}
+
+.container-flex-a:hover {
+    transition: 1.5s;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SEVENTH SECTION:COMPLETE */
+/* MAIN:COMPLETE */
