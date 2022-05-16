@@ -74,8 +74,8 @@ html {
 
 #header .header-img {
     background-attachment: fixed;
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/slid/03.jpg);
-    /* background-image: url(../img/header-img.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/slid/03.jpg); */
+    background-image: url(../img/header-img.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@ html {
     position: relative;
     z-index: 2;
 }
-/* new */
+
 .navbar {
     width: 100%;
     height: 68px;
@@ -111,30 +111,6 @@ html {
 }
 
 /* NAVBAR */
-/* .header-content .navbar {
-    background: transparent;
-    border-bottom: 2px solid transparent;
-    left: 0;
-    min-height: 68px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: #1b1d21;
-    border-color: #333538;
-}
-
-.header-content .navbar-scroll {
-    -webkit-transform: translateY(68px);
-    -webkit-transition: -webkit-transform .5s;
-    background: #1b1d21;
-    border-color: #333538;
-    padding: 0;
-    position: fixed;
-    top: -68px;
-    transform: translateY(68px);
-    transition: transform .5s;
-} */
-
 .header-content .header-content-nav {
     height: 68px;
     margin: 0 auto;
@@ -154,7 +130,6 @@ html {
     font-size: 17px;
     line-height: 68px;
     margin-right: 20px;
-    /* new */
     position: fixed;
     left: 92%;
 }
@@ -365,33 +340,33 @@ html {
 }
 
 .grid-item1 {
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/05.jpg);
-    /* background-image: url(../img/item1.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/05.jpg); */
+    background-image: url(../img/item1.webp);
     grid-area: item1;
 }
 
 .grid-item2 {
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/01.jpg);
-    /* background-image: url(../img/item2.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/01.jpg); */
+    background-image: url(../img/item2.webp);
     grid-area: item2;
 }
 
 .grid-item3 {
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/04.jpg);
-    /* background-image: url(../img/item3.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/04.jpg); */
+    background-image: url(../img/item3.webp);
     grid-area: item3;
 }
 
 .grid-item4 {
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/02.jpg);
-    /* background-image: url(../img/item4.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/02.jpg); */
+    background-image: url(../img/item4.webp);
     grid-area: item4;
     background-position: bottom;
 }
 
 .grid-item5 {
-    background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/03.jpg);
-    /* background-image: url(../img/item5.webp); */
+    /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/portfolio/metro/03.jpg); */
+    background-image: url(../img/item5.webp);
     grid-area: item5;
 }
 
@@ -526,7 +501,7 @@ html {
     line-height: 1.2;
     text-transform: uppercase;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--white);
     color: transparent;
 }
 
