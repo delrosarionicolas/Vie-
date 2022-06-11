@@ -40,7 +40,7 @@ html {
 .center-content {
     height: auto;
     margin: 0 auto 60px auto;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 700px;
     padding: 0 10px;
 }
@@ -66,6 +66,11 @@ html {
     line-height: 2;
 }
 
+.img {
+    width: 100%;
+    height: auto;
+}
+
 /* HEADER */
 #header {
     height: 740px;
@@ -75,7 +80,7 @@ html {
 #header .header-img {
     background-attachment: fixed;
     /* background-image: url(https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/slid/03.jpg); */
-    background-image: url(../img/header-img.webp);
+    background-image: url(../img/header.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,8 +212,8 @@ html {
     align-self: center;
     border-radius: 4px;
     border: 1px solid var(--white);
-    margin-top: 30px;
     text-align: center;
+    margin: 30px auto 0;
 }
 
 .btn:hover {
@@ -244,9 +249,96 @@ html {
     margin: 0 auto;
 }
 
+/* FIRST SECTION */
+.first-container {
+    text-align: justify;
+    height: auto;
+    width: 100%;
+}
 
-/* Second SECTION */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.about-us-left {
+    width: 40%;
+    margin: 0 auto;
+    min-width: 330px;
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+.about-us-left .center-content {
+    margin: 0 0 30px 0;
+    padding: 0%;
+}
+
+.about-us-right {
+    width: 40%;
+    position: relative;
+    min-width: 330px;
+    margin: 0 auto;
+}
+
+.about-us-right-dates {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    display: none;
+}
+
+.about-us-right-dates-left {
+    display: flex;
+    background: var(--white);
+    color: #121a21;
+    padding: 30px 20px;
+    margin-right: 50px;
+    position: absolute;
+
+    bottom: 50px;
+    left: -200px;
+}
+
+.about-us-right-dates-left h3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    padding-right: 20px;
+}
+
+.about-us-right-dates-left p {
+    font-size: 1.5rem;
+    line-height: 68px;
+    width: 130px;
+}
+
+.about-us-right-dates-right {
+    display: flex;
+    padding: 30px 20px;
+    background: #272727;
+    color: var(--white);
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+}
+
+.about-us-right-dates-right h3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    padding-right: 20px;
+}
+
+.about-us-right-dates-right p {
+    font-size: 1.5rem;
+    width: 130px;
+    line-height: 68px;
+}
+
+/* FIRST SECTION:COMPLETE */
+
+
+/* SECOND SECTION */
 .second-container {
     text-align: center;
     height: auto;
@@ -401,6 +493,122 @@ html {
 
 /* FOURTH SECTION:COMPLETE */
 
+/* FIFTH SECTION */
+.fifth-container {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.services .services-content-fifth {
+    border: none;
+}
+
+.services .services-content-fifth .fifth-img {
+    border-radius: 50%;
+    /* border: 1px solid var(--color-span); */
+    max-width: 350px;
+}
+
+.services .services-content .h3-fifth {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    padding-top: 15px;
+    margin: 0;
+}
+
+
+.services .services-content .p-fifth {
+    color: var(--color-span);
+    padding-bottom: 10px;
+}
+
+/* FIFTH SECTION:COMPLETE */
+
+/* SIXTH SECTION */
+.sixth-container {
+    height: auto;
+    width: 100%;
+}
+
+.our-clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-clients-left {
+    width: 30%;
+    min-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.our-clients-right {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.our-clients-right .our-clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.our-clients-right .our-clients-container-content {
+    padding: 20px;
+    max-width: 40%;
+    /* padding: 60px; */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0px auto 40px;
+    height: 160px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+}
+.our-clients-right .our-clients-container-content a img {
+    padding: 15%;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-clients-right .our-clients-container-content p {
+    color: var(--white);
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+    line-height: 158px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    font-size: 1.4rem;
+}
+
+.our-clients-right .our-clients-container-content:hover img {
+    visibility: hidden;
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.our-clients-right .our-clients-container-content:hover p {
+    transform: translateX(0px);
+    opacity: 1
+}
+
+
+/* SIXTH SECTION:COMPLETE */
 
 
 /* SEVENTH SECTION */
