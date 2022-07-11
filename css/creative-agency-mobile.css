@@ -233,33 +233,25 @@ iframe {
         font-size: 5rem;
         margin-bottom: 0;
     }
-
     /* HEADER */
     .about-us-left {
         text-align: initial;
         padding: 0 0 40px 20px;
         min-width: 400px;
     }
-
-
     .about-us-right-ca {
         display: block;
     }
-
     /* HEADER COMPLETE */
-
     /* MAIN */
     .main-content {
         padding-bottom: 200px;
     }
-
     /* FIRST SECTION */
     .services .services-content-ca {
         max-width: 40%;
     }
-
     /* FIRST SECTION COMPLETE */
-
     /* SECOND */
     /* .second-section-ca-container-content {
         display: flex;
@@ -267,6 +259,5 @@ iframe {
     .second-section-ca {
         display: block;
     }
-
     /* MAIN COMPLETE */
 }
