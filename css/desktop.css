@@ -1,51 +1,55 @@
 /* HEADER */
 /* NAVBAR */
-.header-content .header-content-nav .checkbtn {
+.checkbtn {
     display: none;
 }
 
-.header-content .header-content-nav-logo img {
-    margin-top: 18px;
+.header-content-nav-img {
     width: 50px;
+    margin: 24px 0 24px 18px;
 }
 
-.header-content .header-content-nav-ul {
+.header-content-nav-ul {
     background: none;
     display: flex;
     flex-wrap: nowrap;
     height: auto;
-    left: 58%;
-    text-align: start;
+    left: 59%;
+    text-align: end;
     top: 0%;
     width: auto;
 }
 
-.header-content .header-content-nav-ul li {
+.header-content-nav-ul li {
     display: block;
     line-height: 3em;
     margin: 10px 0;
 }
 
-.header-content .header-content-nav-ul li {
+.header-content-nav-ul li {
     display: inline-block;
-    line-height: 68px;
+    line-height: 80px;
     margin: 0 5px;
 }
 
-.header-content .header-content-nav-ul li a {
+.header-content-nav-ul li a {
     margin: 10px 15px;
     padding: 15px 7px;
 }
 
-.header-content .header-content-nav-ul li a:hover {
+.header-content-nav-ul li a:hover {
     color: var(--color-span);
     transition: .5s;
+}
+
+.header-content-nav #check:checked~ul {
+    left: auto;
 }
 
 /* NAVBAR:COMPLETE */
 
 /* TITLE */
-.header-content .header-content-title-h1 {
+.header-container .header-content-title-h1 {
     font-size: 6.5rem;
     letter-spacing: 2px;
 }

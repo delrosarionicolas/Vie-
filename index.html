@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We are two students">
     <title>Vie</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
     <!-- MAIN-MOBILE CSS -->
     <link rel="stylesheet" href="./css/main-mobile.css">
-    <!-- DESKTOP CSS -->
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1040px)">
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
 
     <!-- FONT FAMILY - POPPINS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,31 +27,41 @@
 
 <body>
     <!-- HEADER -->
-    <div id="header">
-        <div class="header-img"></div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <div class="navbar"></div>
-            <nav class="header-content-nav">
-                <input type="checkbox" id="check">
+    <header id="header">
+        <div class="header-img"></div> <!-- HEADER-img -->
+        <div class="header-overlay"></div> <!-- HEADER-overlay -->
 
-                <label for="check" class="checkbtn">
-                    <i aria-label="Menu" class="fa-solid fa-bars"></i>
-                </label>
 
-                <label class="header-content-nav-logo" for="">
-                    <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/logo-light.png" alt="Logo"> -->
-                    <img src="./img/logo-light.webp" alt="Logo">
-                </label>
-                <ul class="header-content-nav-ul">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./">About</a></li>
-                    <li><a href="./">Works</a></li>
-                    <li><a href="./">Blog</a></li>
-                    <li><a href="./">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-content-title">
+        <div class="header-container"> <!-- HEADER-container -->
+            
+            <div class="header-content"> <!-- HEADER-content -->
+                <nav class="header-content-nav"> <!-- HEADER-nav -->
+
+                    <label class="checkbtn" for="check">
+                        <!-- reparar -->
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input id="check" type="checkbox">
+    
+                    <label for="">
+                        <figure>
+                            <a href="./index.html">
+                                <img class="header-content-nav-img" src="../img/logo-light.webp" alt="Logo">
+                            </a>
+                        </figure>
+                    </label>
+    
+                    <ul class="header-content-nav-ul"> <!-- HEADER-nav ul -->
+                        <li><a href="./index.html">Home</a></li> 
+                        <li><a href="./creative-agency.html">About</a></li>
+                        <li><a href="./creative-agency.html">Works</a></li>
+                        <li><a href="./contact.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                   </ul> <!-- HEADER-nav ul -->
+                <nav> <!-- HEADER-nav -->
+            </div> <!-- HEADER-content -->
+
+            <div class="header-content-title"> <!-- HEADER-content-title -->
                 <h1 class="header-content-title-h1 color-font">Digital <br> Design Awards</h1>
                 <p class="header-content-title-p">If you need to redesign your new project, new visual strategy, ux
                     structure
@@ -55,18 +69,17 @@
                 <a class="btn" href="#">
                     <span>Look More</span>
                 </a>
-            </div>
-        </div>
-    </div>
+            </div> <!-- HEADER-content-title -->
+        </div> <!-- HEADER-container -->
+    </header>
     <!-- HEADER -->
 
     <!-- MAIN -->
-    <div class="main-content">
-
+    <main class="main-content"> <!-- MAIN-content -->
         <!-- FIRST SECTION -->
         <section class="first-container main-container section-padding">
-            <div class="about-us">
-                <div class="about-us-left">
+            <div class="about-us"> <!-- about us -->
+                <div class="about-us-left"> <!-- about us left -->
                     <div class="center-content">
                         <p class="subtitle">About Us</p>
                         <h2 class="title color-font">Our Company</h2>
@@ -80,241 +93,271 @@
                             <span>Look More</span>
                         </a>
                     </div>
-                </div>
-                <div class="about-us-right">
-                    <img class="img" src="./img/first-container.webp" alt="About Us">
-                    <div class="about-us-right-dates">
-                        <div class="about-us-right-dates-left">
-                            <h3>4k</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="about-us-right-dates-right">
-                            <h3>14k</h3>
-                            <p>Success projects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div> <!-- about us left -->
+
+                <div class="about-us-right"> <!-- about us right -->
+                    <figure>
+                        <img class="img" src="./img/first-container.webp" alt="About Us">
+                        <figcaption class="about-us-right-dates">
+                            <div class="about-us-right-dates-left">
+                                <h3>4k</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="about-us-right-dates-right">
+                                <h3>14k</h3>
+                                <p>Success projects</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div> <!-- about us right -->
+            </div> <!-- about us -->
         </section>
         <!-- FIRST SECTION:COMPLETE -->
 
         <!-- SECOND SECTION -->
         <section class="second-container main-container section-padding">
-            <div class="center-content">
+            <div class="center-content"> <!-- center content -->
                 <p class="subtitle">Best Features</p>
                 <h2 class="title color-font">We are a new digital product development agency.</h2>
-            </div>
-            <div class="services">
-                <div class="services-content">
+            </div> <!-- center content -->
+
+            <div class="services"> <!-- services -->
+                <article class="services-content"> <!-- services content -->
                     <i class=" icon fa-solid fa-fill-drip"></i>
                     <h3 class="services-content-h3">Graphic Design</h3>
                     <p class="paragraph">Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
-                </div>
-                <div class="services-content">
+                </article> <!-- services content -->
+                <article class="services-content"> <!-- services content -->
                     <i class="icon fa-solid fa-mobile-screen"></i>
                     <h3 class="services-content-h3">Web & Mobile Design</h3>
                     <p class="paragraph">Tempore corrupti temporibus fuga earum asperiores fugit.</p>
-                </div>
-                <div class="services-content">
+                </article> <!-- services content -->
+                <article class="services-content"> <!-- services content -->
                     <i class="icon fa-solid fa-chalkboard-user"></i>
                     <h3 class="services-content-h3">Social media Marketing</h3>
                     <p class="paragraph">Tempore corrupti temporibus fuga earum asperiores fugit.</p>
-                </div>
-            </div>
+                </article> <!-- services content -->
+            </div> <!-- services -->
         </section>
         <!-- SECOND SECTION:COMPLETE -->
 
-        <!-- ! * THIRD SECTION -->
+        <!-- THIRD SECTION -->
         <section class="third-container main-container section-padding">
-            <div class="center-content">
+            <div class="center-content"> <!-- center content -->
                 <p class="subtitle">Natural plus modern</p>
                 <h2 class="title color-font">Art & Illustration.</h2>
-            </div>
-            <div class="third-container-grid">
-                <div class="grid-item grid-item1">
+            </div>  <!-- center content -->
+
+            <div class="third-container-grid">  <!-- third container grid -->
+                
+                <div class="grid-item grid-item1"> <!-- third container grid item 1 -->
                     <div class="grid-item-overlay"></div>
-                </div>
-                <div class="grid-item grid-item2">
+                </div> <!-- third container grid item 1 -->
+
+                <div class="grid-item grid-item2"> <!-- third container grid item 2 -->
                     <div class="grid-item-overlay"></div>
-                </div>
-                <div class="grid-item grid-item3">
+                </div> <!-- third container grid item 2 -->
+
+                <div class="grid-item grid-item3"> <!-- third container grid item 3 -->
                     <div class="grid-item-overlay"></div>
-                </div>
-                <div class="grid-item grid-item4">
+                </div> <!-- third container grid item 3 -->
+
+                <div class="grid-item grid-item4"> <!-- third container grid item 4 -->
                     <div class="grid-item-overlay"></div>
-                </div>
-                <div class="grid-item grid-item5">
+                </div> <!-- third container grid item 4 -->
+
+                <div class="grid-item grid-item5"> <!-- third container grid item 5 -->
                     <div class="grid-item-overlay"></div>
-                </div>
-            </div>
+                </div> <!-- third container grid item 5 -->
+
+            </div> <!-- third container grid -->
         </section>
-        <!-- ! * THIRD SECTION:COMPLETE -->
+        <!-- THIRD SECTION:COMPLETE -->
 
         <!-- FOURTH SECTION -->
         <section class="fourth-container main-container section-padding">
-            <div class="center-content">
+            <div class="center-content"> <!-- center content-->
                 <p class="subtitle">FUN FACTS</p>
                 <h2 class="title color-font">Pleasure in the job puts perfection in the work.</h2>
-            </div>
-            <div class="services">
-                <div class="services-content services-content-fourth">
+            </div> <!-- center content-->
+
+            <div class="services"> <!-- services -->
+                <article class="services-content services-content-fourth"> <!-- services-content -->
                     <i class="icon icon-fourth-section fa-regular fa-thin fa-face-smile"></i>
                     <h3 class="services-content-h3 h3-fourth">2400</h3>
                     <p class="paragraph">People who are commited to their management tasks.</p>
-                </div>
-                <div class="services-content services-content-fourth">
+                </article> <!-- services-content -->
+                <article class="services-content services-content-fourth"> <!-- services-content -->
                     <i class="icon icon-fourth-section fa-solid fa-briefcase"></i>
                     <h3 class="services-content-h3 h3-fourth">133</h3>
                     <p class="paragraph">Signed projects that have been confirmed complete!</p>
-                </div>
-                <div class="services-content services-content-fourth">
+                </article> <!-- services-content --> 
+                <article class="services-content services-content-fourth"> <!-- services-content -->
                     <i class="icon icon-fourth-section fa-solid fa-medal"></i>
                     <h3 class="services-content-h3 h3-fourth">46</h3>
                     <p class="paragraph">International awards and cups for design projects.</p>
-                </div>
-            </div>
+                </article> <!-- services-content -->
+            </div> <!-- services -->
         </section>
         <!-- FOURTH SECTION:COMPLETE -->
 
         <!-- FIFTH SECTION -->
         <section class="fifth-container main-container">
-            <div class="center-content">
+            <div class="center-content"> <!-- center-content -->
                 <p class="subtitle">Our Clients</p>
                 <h2 class="title color-font">What Client's Say</h2>
-            </div>
+            </div> <!-- center-content -->
 
-            <div class="services">
-                <div class="services-content services-content-fifth">
+            <div class="services">  <!-- services -->
+                <div class="services-content services-content-fifth"> <!-- services-content -->
                     <figure>
                         <img class="fifth-img img" src="./img/first-co-founder.webp" alt="Alex Regelman">
+                        <figcaption>
+                            <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
+                            <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
+                            <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat
+                                velit
+                                class aptent taciti sociosqu ad litora.</p>
+                        </figcaption>
                     </figure>
-                    <div>
-                        <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
-                        <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
-                        <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                            class aptent taciti sociosqu ad litora.</p>
-                    </div>
-                </div>
-                <div class="services-content services-content-fifth">
-                    <figure>
+                </div> <!-- services-content -->
+                <div class="services-content services-content-fifth"> <!-- services-content -->
+                    <figure> <!-- services-content figure -->
                         <img class="fifth-img img" src="./img/second-co-founder.webp" alt="Alex Regelman">
-                    </figure>
-                    <div>
-                        <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
-                        <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
-                        <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                            class aptent taciti sociosqu ad litora.</p>
-                    </div>
-                </div>
-                <div class="services-content services-content-fifth">
-                    <figure>
+                        <figcaption>
+                            <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
+                            <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
+                            <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat
+                                velit
+                                class aptent taciti sociosqu ad litora.</p>
+                        </figcaption>
+                    </figure> <!-- services-content figure -->
+                </div> <!-- services-content -->
+                <div class="services-content services-content-fifth"> <!-- services-content -->
+                    <figure> <!-- services-content figure -->
                         <img class="fifth-img img" src="./img/third-co-founder.webp" alt="Alex Regelman">
-                    </figure>
-                    <div>
-                        <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
-                        <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
-                        <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit
-                            class aptent taciti sociosqu ad litora.</p>
-                    </div>
-                </div>
-            </div>
+                        <figcaption>
+                            <h3 class="services-content-h3 h3-fifth">Alex Regelman</h3>
+                            <p class="paragraph p-fifth">CO-FOUNDER, COLARBIO.</p>
+                            <p class="paragraph">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat
+                                velit
+                                class aptent taciti sociosqu ad litora.</p>
+                        </figcaption>
+                    </figure> <!-- services-content figure -->
+                </div> <!-- services-content -->
+            </div>  <!-- services -->
         </section>
         <!--  FIFTH SECTION:COMPLETE -->
 
         <!-- SIXTH SECTION -->
         <section class="sixth-container main-container section-padding">
-            <div class="our-clients">
-                <div class="our-clients-left">
+            <div class="our-clients"> <!-- our clients -->
+                <div class="our-clients-left"> <!-- our clients left -->
                     <div class="center-content">
                         <p class="subtitle">Best Features</p>
                         <h2 class="title color-font">Our Clients</h2>
                         <p class="paragraph">Our area of practice is quite wide: design, graphics, branding,
                             development.</p>
                     </div>
-                </div>
-                <div class="our-clients-right">
-                    <div class="our-clients-container">
-                        <div class="our-clients-container-content">
+                </div> <!-- our clients left -->
+                <div class="our-clients-right"> <!-- our clients right -->
+                    <div class="our-clients-container"> <!-- our clients container -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-one.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-one.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-two.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-two.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-three.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-three.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-four.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-four.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                    </div>
-
-                    <div class="our-clients-container">
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                    </div> <!-- our clients container -->
+                    <div class="our-clients-container"> <!-- our clients container -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-five.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-five.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-six.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-six.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-seven.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-seven.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="our-clients-container-content">
+                        </div> <!-- our clients container content -->
+                        <div class="our-clients-container-content"> <!-- our clients container content -->
                             <a href="#">
-                                <img class="img" src="./img/vie-eight.webp" alt="Vie">
+                                <figure>
+                                    <img class="img" src="./img/vie-eight.webp" alt="Vie">
+                                </figure>
                                 <div>
                                     <p>www.Vie.com</p>
                                 </div>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> <!-- our clients container content -->
+                    </div> <!-- our clients container -->
+                </div> <!-- our clients right -->
+            </div> <!-- our clients -->
         </section>
         <!-- SIXTH SECTION:COMPLETE -->
 
         <!-- SEVENTH SECTION -->
         <section class="seventh-container main-container  section-padding ">
-            <div class="center-content">
+            <div class="center-content"> <!-- center content -->
                 <p class="subtitle">RECENT ARTICLES</p>
                 <h2 class="title color-font">From our blogs.</h2>
-            </div>
-            <div class="seventh-container-content">
-                <div class="container-flex">
+            </div> <!-- center content -->
+            <div class="seventh-container-content"> <!-- seventh container content -->
+                <article class="container-flex"> <!-- container flex -->
                     <figure class="container-flex-img">
                         <img src="./img/seventh-section-1.webp" alt="Furniture">
                         <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/blog/1.jpg" 
@@ -323,8 +366,8 @@
                     </figure>
                     <p class="container-flex-p">How to use solid color combine with simple furnitures.</p>
                     <a class="container-flex-a" href="#">READ MORE</a>
-                </div>
-                <div class="container-flex">
+                </article> <!-- container flex -->
+                <article class="container-flex"> <!-- container flex -->
                     <figure class="container-flex-img">
                         <img src="./img/seventh-section-2.webp" alt="Dron">
                         <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/blog/2.jpg" alt="Dron"> -->
@@ -332,39 +375,40 @@
                     </figure>
                     <p class="container-flex-p">How to use solid color combine with simple furnitures.</p>
                     <a class="container-flex-a" href="#">READ MORE</a>
-                </div>
-            </div>
+                </article> <!-- container flex -->
+            </div> <!-- seventh container content -->
         </section>
         <!-- SEVENTH SECTION -->
         <!-- EIGHTH -->
         <section class="eight-container main-container section-padding">
-            <div class="eight-container-content">
-                <div class="eight-container-content-leftdiv">
-                    <p>Let’s Talk</p>
+            <div class="eight-container-content"> <!-- eight container content -->
+                <div class="eight-container-content-leftdiv"> <!-- eight container content leftdiv -->
+                    <p>Let's Talk</p>
                     <h2>
                         <div>about your</div>
                         <div>next project.</div>
                     </h2>
-                </div>
-                <div class="eight-container-content-rightdiv">
+                </div> <!-- eight container content leftdiv -->
+                <div class="eight-container-content-rightdiv"> <!-- eight container content leftdiv -->
                     <div class="btn" href="">
                         <a href="#">
                             <span>Get in Touch</span>
                         </a>
                     </div>
-                </div>
-            </div>
+                </div> <!-- eight container content leftdiv -->
+            </div> <!-- eight container content -->
         </section>
         <!-- EIGHTH:COMPLETE -->
-
-    </div>
+    </main> <!-- MAIN-content -->
     <!-- MAIN:COMPLETE -->
 
+
+    <!-- FOOTER -->
     <footer class="footer-content section-padding">
-        <section class="footer-container">
-            <div class="services">
-                <div class="services-content footer-services-content">
-                    <div class="">
+        <section class="footer-container"> <!-- FOOTER container -->
+            <div class="services"> <!-- services -->
+                <div class="services-content footer-services-content"> <!-- footer services content -->
+                    <div>
                         <p class="footer-services-content-title">Contact US</p>
                     </div>
                     <ul>
@@ -372,89 +416,79 @@
                             <span class="footer-services-span">
                                 <i class="fa-solid fa-phone"></i>
                             </span>
-
                             <div class="footer-services-content-text">
                                 <p class="p">Officeal Address</p>
                                 <p>504 White St . Dawsonville, GA 30534 , New York</p>
                             </div>
-
                         </li>
                         <li class="footer-services-content-li">
                             <span class="footer-services-span">
                                 <i class="fa-solid fa-envelope"></i>
                             </span>
-
-                            <div class="footer-services-content-text">
+                            <address class="footer-services-content-text">
                                 <p class="p">Email Us</p>
                                 <p>delrosariolozanonicolas@gmail.com</p>
                                 <p>geremy.ocsa11@gmail.com</p>
-                            </div>
-
+                            </address>
                         </li>
                         <li class="footer-services-content-li">
                             <span class="footer-services-span">
                                 <i class="fa-solid fa-location-pin"></i>
                             </span>
-
                             <div class="footer-services-content-text">
                                 <p class="p">Call Us</p>
                                 <p>+51913621524</p>
                             </div>
-
                         </li>
                     </ul>
-
-                </div>
-
-                <div class="services-content footer-services-content">
-                    <div class="">
-                        <p class="footer-services-content-title">Recent News</p>
+                </div> <!-- footer services content -->
+                <div class="services-content footer-services-content"> <!-- footer services content -->
+                    <div>
+                        <p class="footer-services-content-title">Recent News</p> 
                     </div>
-                    <ul>
-                        <li class="footer-services-content-li">
-                            <div class="footer-services-content-img">
+                    <ul> <!-- footer services content ul -->
+                        <li class="footer-services-content-li"> <!-- footer services content ul li -->
+                            <figure class="footer-services-content-img">
                                 <img src="./img/seventh-section-1.webp" alt="Furniture">
                                 <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/blog/1.jpg" 
                                     alt="Furniture"> -->
-                            </div>
-                            <div class="footer-services-content-text">
+                            </figure>
+                            <figcaption class="footer-services-content-text">
                                 <p>The Start-Up Ultimate Guide to Make Your WordPress Journal.</p>
                                 <span>14 sep 2021</span>
-                            </div>
-                        </li>
-
-                        <li class="footer-services-content-li">
-                            <div class="footer-services-content-img">
+                            </figcaption>
+                        </li> <!-- footer services content ul li -->
+                        <li class="footer-services-content-li"> <!-- footer services content ul li -->
+                            <figure class="footer-services-content-img">
                                 <img src="./img/seventh-section-2.webp" alt="Dron">
                                 <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/blog/2.jpg"
                                     alt="Dron"> -->
-                            </div>
-                            <div class="footer-services-content-text">
+                            </figure>
+                            <figcaption class="footer-services-content-text">
                                 <p>The Start-Up Ultimate Guide to Make Your WordPress Journal.</p>
                                 <span>14 sep 2021</span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="subscribe">
+                            </figcaption>
+                        </li> <!-- footer services content ul li -->
+                        <li> <!-- footer services content ul li -->
+                            <form class="subscribe">
                                 <input placeholder="Type your email" type="text">
                                 <span>
                                     <i class="fa-brands fa-telegram"></i>
                                 </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-services-content services-content">
-                    <div>
-                        <div class="footer-services-content-img-logo">
+                            </form>
+                        </li> <!-- footer services content ul li -->
+                    </ul> <!-- footer services content ul -->
+                </div> <!-- footer services content -->
+                <div class="footer-services-content services-content"> <!-- footer services content -->
+                    <div> <!-- footer services content div -->
+                        <figure class="footer-services-content-img-logo">
                             <!-- <img src="https://www.smartinnovates.com/uithemez/item/vie1/vie-dark/img/logo-light.png" alt="Logo"> -->
                             <img src="./img/logo-light.webp" alt="Logo">
-                        </div>
+                        </figure>
                         <div class="footer-services-content-text">
                             <p class="p us">Nicolas Del Rosario Lozano</p>
                         </div>
+                        <!-- social media -->
                         <div class="social-media">
                             <a aria-label="GitHub" href="https://github.com/delrosarionicolas">
                                 <i class="fa-brands fa-github"></i>
@@ -469,10 +503,11 @@
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
-
+                        <!-- social media -->
                         <div class="footer-services-content-text">
                             <p class="p us">Geremy Ocsa</p>
                         </div>
+                        <!-- social media -->
                         <div class="social-media">
                             <a aria-label="GitHub" href="#">
                                 <i class="fa-brands fa-github"></i>
@@ -487,16 +522,23 @@
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </div>
+                        <!-- social media -->
+                        <!-- all rights -->
                         <div class="all-rights">
                             <p>© 2021,<a href="#">Vie Template.</a> All rights reserved.</p>
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
+                        <!-- all rights -->
+                    </div> <!-- footer services content div -->
+                </div> <!-- footer services content -->
+            </div> <!-- services -->
+        </section> <!-- FOOTER container -->
     </footer>
+    <!-- FOOTER -->
+    <!-- scroll up -->
+    <a href="#header" id="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- scroll up -->
 </body>
 
 </html>

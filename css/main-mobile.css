@@ -25,6 +25,7 @@
 html {
     font-family: var(--poppins);
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .color-font {
@@ -73,7 +74,7 @@ html {
 
 /* HEADER */
 #header {
-    height: 740px;
+    height: 700px;
     width: 100%;
 }
 
@@ -102,84 +103,77 @@ html {
     z-index: 1;
 }
 
-#header .header-content {
+#header .header-container {
     position: relative;
     z-index: 2;
 }
 
-.navbar {
+.header-content {
     width: 100%;
-    height: 68px;
+    height: 80px;
     position: fixed;
-    background: #1b1d21;
-    border-color: #333538;
+    left: 0%;
+    top: 0%;
+    background-color: #1b1d21;
+    border-bottom: 1px solid #333538;
+    z-index: 5;
 }
 
-/* NAVBAR */
 .header-content .header-content-nav {
-    height: 68px;
-    margin: 0 auto;
+    height: 80px;
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
 }
 
-.header-content .header-content-nav #check {
+.checkbtn {
+    color: var(--white);
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    line-height: 80px;
+    margin-right: 24px;
+}
+
+#check {
     display: none;
 }
 
-.header-content .header-content-nav .checkbtn {
-    color: var(--white);
-    cursor: pointer;
-    display: block;
-    float: right;
-    font-size: 17px;
-    line-height: 68px;
-    margin-right: 20px;
-    position: fixed;
-    left: 92%;
-}
-
-.header-content .header-content-nav-logo {
-    padding: 0 12px;
-    position: fixed;
-}
-
-.header-content .header-content-nav-logo img {
-    height: auto;
-    margin-top: 23px;
+.header-content-nav-img {
     width: 40px;
+    margin: 29px 0 29px 18px;
 }
 
-.header-content .header-content-nav-ul {
+.header-content-nav-ul {
     background: #11141b;
-    height: 210px;
+    height: 220px;
     left: -100%;
     position: fixed;
     text-align: center;
-    top: 68px;
+    top: 80px;
     transition: all .5s;
     width: 100%;
 }
 
-.header-content .header-content-nav-ul li {
+.header-content-nav-ul li {
     display: block;
     line-height: 3em;
     margin: 10px 0;
 }
 
-.header-content .header-content-nav-ul li a {
+.header-content-nav-ul li a {
     color: var(--white);
     font-size: 1.2rem;
 }
 
-.header-content .header-content-nav #check:checked~ul {
+.header-content-nav #check:checked~ul {
     left: 0;
 }
 
-/* NAVBAR:COMPLETE */
+
 
 /* TITLE */
-.header-content .header-content-title {
+.header-content-title {
     min-width: 350px;
     max-width: 700px;
     margin: 30px auto 0 auto;
@@ -190,14 +184,14 @@ html {
     justify-content: center;
 }
 
-.header-content .header-content-title-h1 {
+.header-content-title-h1 {
     font-weight: 800;
     font-size: 3rem;
     letter-spacing: 1px;
     line-height: 1.4em;
 }
 
-.header-content .header-content-title-p {
+.header-content-title-p {
     color: var(--just-white);
     margin-top: 15px;
     font-size: 1.6rem;
@@ -214,10 +208,11 @@ html {
     border: 1px solid var(--white);
     text-align: center;
     margin: 30px auto 0;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
 }
 
 .btn:hover {
-    transition: 1.5s;
     background: var(--white);
 }
 
@@ -226,10 +221,10 @@ html {
     font-size: 1.4rem;
     line-height: 50px;
     font-weight: 400;
+    transition: all ease-in-out .5s;
 }
 
 .btn span:hover {
-    transition: 1.5s;
     color: #333;
 }
 
@@ -860,13 +855,13 @@ html {
     letter-spacing: 1px;
 }
 
-.footer-services-content .social-media {
+.social-media {
     display: flex;
     justify-content: space-evenly;
 
 }
 
-.footer-services-content .social-media a {
+.social-media a {
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -895,3 +890,22 @@ html {
 /* FOOTER PART 3:COMPLETE */
 
 /* FOOTER COMPLETE */
+
+/* SCROll-UP */
+#scroll-up{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.6rem;
+    color: var(--color-span);
+    border: 2px solid var(--color-span);
+    text-align: center;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+/* SCROLL-UP:COMPLETE */
